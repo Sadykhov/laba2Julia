@@ -18,7 +18,6 @@ function task1(arr)
     end
     arr2 = zeros(l-2)
     j = 1
-    
     for  i in 1:l
         if i != index_min && i != index_max
             arr2[j] = arr[i]
@@ -29,5 +28,5 @@ function task1(arr)
 end
 
 
-a = [1,20,4,-5,6]
-task1(a)
+a = [-1,-20,-4,-5,-6, -4,-5,-23,-40,-31,-65,-76,-87,-989,-32,-12]
+println(task1(a))

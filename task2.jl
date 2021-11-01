@@ -9,7 +9,7 @@ function task2()
         if i % m != 0
             k = div(i, m, RoundDown)
             if (k+1) % 2 != 0
-                matrix[i] = rand(Int64.(1:24))
+                matrix[i] = rand(Int64.(1:m))
             else
                 matrix[i] = (k+1)^2
             end
@@ -17,13 +17,14 @@ function task2()
             i -= 1
             k = div(i, m, RoundDown)
             if (k+1) % 2 != 0
-                matrix[i] = rand(Int64.(1:24))
+                matrix[i] = rand(Int64.(1:m))
             else
                 matrix[i] = (k+1)^2
             end
             i+=1
         end
     end
+    println()
     if n <= m
         for i in 1:l
             if i%m == 0
